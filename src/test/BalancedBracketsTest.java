@@ -58,6 +58,11 @@ public class BalancedBracketsTest {
     }@Test
     public void multipleBalancedWithUnbalancedBracketsReturnTrue() {
         assertFalse(BalancedBrackets.hasBalancedBrackets("[][]]"));
+        assertFalse(BalancedBrackets.hasBalancedBrackets("[[][]"));
+    }
+    @Test
+    public void multipleBalancedWithUdnbalancedBracketsReturnTrue() {
+        assertTrue(BalancedBrackets.hasBalancedBrackets("[[[[]]]]"));
     }
 
 
